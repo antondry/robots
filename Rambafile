@@ -1,0 +1,38 @@
+### Headers settings
+company: TeeDee
+
+### Xcode project settings
+project_name: helpme
+xcodeproj_path: robots.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: robots
+
+# The file path for new modules
+project_file_path: robots/Classes/Presentation/UserStories
+
+# The Xcode group path to new modules
+project_group_path: robots/Classes/Presentation/UserStories
+
+### Tests generation settings section
+# The tests target name
+# test_target: robots Tests
+
+# The file path for new tests
+# test_file_path: robots Tests
+
+# The Xcode group path to new tests
+# test_group_path: robots Tests
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Catalogs
+catalogs:
+- 'https://github.com/lvinoeserdce/generamba-modules'
+
+### Templates
+templates:
+- {name: swift_viper_module}
+- {name: swift_service_module}
