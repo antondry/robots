@@ -6,7 +6,7 @@
 //  Copyright © 2016 TeeDee. All rights reserved.
 //
 
-protocol ContactInfoModuleInput: class, ViperModuleInput {
+protocol ContactInfoModuleInput: ViperModuleInput {
 
 	/** Method for configure module
      - parameter contact: Contact object
