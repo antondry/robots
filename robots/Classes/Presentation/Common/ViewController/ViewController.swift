@@ -46,7 +46,7 @@ class ViewController: UIViewController, ViperModuleRequestViewInput {
     // MARK: Private helpers
     
     private func initSpinner() {
-        spinner = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+        spinner = UIActivityIndicatorView(style: .whiteLarge)
         spinner.color = Color.black
         spinner.hidesWhenStopped = true
         spinner.translatesAutoresizingMaskIntoConstraints = false

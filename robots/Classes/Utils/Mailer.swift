@@ -18,9 +18,9 @@ class Mailer: NSObject {
         mailComposer.mailComposeDelegate = self
         var email = ""
         if (to.range(of: "\n") != nil) {
-            let endIndex = to.characters.index(of: "\n")
-            let range = to.characters.index(to.startIndex, offsetBy: 0)..<endIndex!
-            email = to[range]
+            let endIndex = to.index(of: "\n")
+            let range = to.index(to.startIndex, offsetBy: 0)..<endIndex!
+            email = String(to[range])
         } else {
             email = to
         }

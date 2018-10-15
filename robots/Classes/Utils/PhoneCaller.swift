@@ -12,9 +12,9 @@ class PhoneCaller {
     class func callPhone(phone: String) {
         var number = phone
         if (number.range(of: "\n") != nil) {
-            let endIndex = number.characters.index(of: "\n")
+            let endIndex = number.index(of: "\n")
             let range = number.startIndex..<endIndex!
-            number = number[range]
+            number = String(number[range])
         } else {
             number = phone
         }

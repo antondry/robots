@@ -9,8 +9,8 @@
 import UIKit
 
 protocol ViperModuleTransitionHandler: class {
-    weak var moduleInput: ViperModuleInput? { get set }
-    weak var moduleOutput: ViperModuleOutput? { get set }
+    var moduleInput: ViperModuleInput? { get set }
+    var moduleOutput: ViperModuleOutput? { get set }
     func openModule(_ segueIdentifier: String, configurationBlock: ConfigurationBlock?)
 }
 

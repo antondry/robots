@@ -13,7 +13,7 @@ class TableView: UITableView {
         super.init(coder: aDecoder)
         backgroundColor = Color.white
         separatorStyle = .none
-        rowHeight = UITableViewAutomaticDimension
+        rowHeight = UITableView.automaticDimension
         estimatedRowHeight = 200
     }
 }
